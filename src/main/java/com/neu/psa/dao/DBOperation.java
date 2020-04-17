@@ -12,7 +12,7 @@ import com.neu.psa.pojo.MatchData;
 
 public class DBOperation {
 	
-	  static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	  static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";  
 	   static final String DB_URL = "jdbc:mysql://localhost/psadb";
 
 	   static final String USER = "root";
@@ -23,10 +23,10 @@ public class DBOperation {
 
 		   Connection conn = null;
 		   Statement stmt = null;
-		   List<MatchData> matchDataList = new ArrayList<>();
+		   List<MatchData> matchDataList = new ArrayList<MatchData>();
 		   try{
 		      
-		      Class.forName("com.mysql.jdbc.Driver");
+		      Class.forName(JDBC_DRIVER);
 
 		      conn = (Connection) DriverManager.getConnection(DB_URL, USER, PASS);
 		      
