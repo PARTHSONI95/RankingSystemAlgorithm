@@ -54,5 +54,5 @@ IGNORE 1 LINES
 
 **Developers**
 
-Harshit Shukla (NUID - 1080358), Email - shukla.har@husky.neu.edu
-Parth Soni (NUID - 1087468), Email - soni.pa@husky.neu.edu
+-Harshit Shukla (NUID - 1080358), Email - shukla.har@husky.neu.edu
+-Parth Soni (NUID - 1087468), Email - soni.pa@husky.neu.edu
