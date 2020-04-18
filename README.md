@@ -1,4 +1,4 @@
-##Project Title : Program structures & Algorithm - Ranking System
+##Project Title : Program structures & Algorithm - Ranking System##
 
 This project aims at developing the Ranking System algorithm using the dataset where dataset contains the data of cricket matches between teams for past 3 years. Dataset consists of different factors to be accounted for defining ranking system. The probability derived for different factors ultimately helps to compare the performance of the teams and predict the winning chances of any team when match will be played in the future.
 
@@ -8,12 +8,12 @@ This project aims at developing the Ranking System algorithm using the dataset w
 - Pojo package contains classes for beans used in application.
 - Service package contains classes related to calculating various statistical parameters and probability.
 
-**Prerequisites
+**Prerequisites**
 
 - Any IDE like Eclipse or Intellij required to run the code. Here Eclipse is used as development environment.
 - MySQL database is required to load dataset and fetch from it.
 
-**Installation
+**Installation**
 
 - Clone the repository `https://github.com/Harshit2512/RankingSystemAlgorithm.git' in local directory.
 - Import project in IDE.
@@ -21,10 +21,8 @@ This project aims at developing the Ranking System algorithm using the dataset w
 
 mysql> create database psadb;
 
-// Switch to use created Db in above step
 mysql> use psadb;
 
-// Now create table named 'matcheshistory' in Db with mentioned columns
 CREATE TABLE matcheshistory (
 team VARCHAR(40),
 opponent VARCHAR(40),
@@ -37,8 +35,6 @@ rpo double
 
 mysql> show tables;
 
-
-// To load csv file in Db, refer to the local file path in below query
 LOAD DATA LOCAL INFILE "S:/MatchesHistory.csv" INTO TABLE psadb.matcheshistory
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
@@ -47,16 +43,16 @@ IGNORE 1 LINES
 
 - Note: Make sure to change the directory path of CSV file from correct local directory.
 
-** Running the code
+** Running the code**
 
 - Change Database User and password as required by your MySQL set up in DBOperation class.
 - Run the program as Java Application from DataService class.
 
-**Versioning
+**Versioning**
 
 - GitHub and Git bash are used for version controlling.
 
-**Developers
+**Developers**
 
 Harshit Shukla (NUID - 1080358), Email - shukla.har@husky.neu.edu
 Parth Soni (NUID - 1087468), Email - soni.pa@husky.neu.edu
