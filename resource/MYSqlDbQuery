@@ -1,0 +1,26 @@
+// Create Database named 'psadb' in MySQL Db first
+mysql> create database psadb;
+
+// Switch to use created Db in above step
+mysql> use psadb;
+
+// Now create table named 'matcheshistory' in Db with mentioned columns
+CREATE TABLE matcheshistory (
+team VARCHAR(40),
+opponent VARCHAR(40),
+matches INT,
+won INT,
+lost INT,
+average double,
+rpo double
+);
+
+mysql> show tables;
+
+
+// To load csv file in Db, refer to the local file path in below query
+LOAD DATA LOCAL INFILE "S:/NEU/Sem2/PSA/MatchesHistory.csv" INTO TABLE psadb.matcheshistory
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+IGNORE 1 LINES
+(Team, Opponent, Matches, Won, Lost, average, RPO);
