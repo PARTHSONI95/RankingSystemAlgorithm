@@ -1,15 +1,16 @@
 package com.neu.psa.pojo;
 
+/**
+ * 
+ * <h1>Data Transaction Object - MatchData</h1>
+ * <p>Used while storing the object values fetched from MySQL database</p>
+ * 
+ * @version 2.0
+ * @author parth
+ *
+ */
 public class MatchData {
-	
-	private String team;
-	private String opponent;
-	private int matches;
-	private int won;
-	private int lost;
-	private double average;
-	private double rpo;
-	
+
 	public String getTeam() {
 		return team;
 	}
@@ -52,7 +53,15 @@ public class MatchData {
 	public void setRpo(double rpo) {
 		this.rpo = rpo;
 	}
-	
-	
-	
+
+	private String team;
+	private String opponent;
+	private int matches;
+	private int won;
+	private int lost;
+	private double average;
+	private double rpo;
+
+
 }
+

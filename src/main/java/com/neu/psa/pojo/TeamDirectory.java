@@ -1,16 +1,19 @@
 package com.neu.psa.pojo;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-
+/**
+ * <h1>Directory storing team data</h1>
+ * <p>It uses a HashMap to store the computes team values where:</p>
+ * <ul><li>Key - Team Name</li>
+ * <li>Value - Team Object of class {@link Team}</li>
+ * 
+ * 
+ * @author parth
+ *
+ */
 public class TeamDirectory {
 
-	
-	private Map<String,Team> teamMap = new HashMap<String,Team>();
-	
-	
 	public Map<String, Team> getTeamMap() {
 		return teamMap;
 	}
@@ -24,5 +27,6 @@ public class TeamDirectory {
 		teamMap.put(team.getTeamName(),team);
 	}
 	
+	private Map<String,Team> teamMap = new HashMap<String,Team>();
 	
 }

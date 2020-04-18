@@ -1,18 +1,16 @@
 package com.neu.psa.pojo;
 
+
+/**
+ * 
+ * Data Transfer Object - 
+ * @since 04-14-2020
+ * @version 1.0
+ * 
+ * @author parth
+ *
+ */
 public class Team {
-	
-	private String teamName;
-	private int teamSeriesCount;
-	private int teamMatchCount;
-	private double mean_Of_Average;
-	private double mean_Of_RPO;
-	private double stdDeviation_ForAverage;
-	private double stdDeviation_ForRPO;
-	private double tProbByAverage;
-	private double tProbByRPO;
-	
-	
 	
 	public double getStdDeviation_ForAverage() {
 		return stdDeviation_ForAverage;
@@ -45,14 +43,12 @@ public class Team {
 		this.teamName = teamName;
 	}
 	
-	
 	public int getTeamSeriesCount() {
 		return teamSeriesCount;
 	}
 	public void setTeamSeriesCount(int teamSeriesCount) {
 		this.teamSeriesCount = teamSeriesCount;
 	}
-	
 	
 	public int getTeamMatchCount() {
 		return teamMatchCount;
@@ -72,6 +68,14 @@ public class Team {
 	public void settProbByRPO(double tProbByRPO) {
 		this.tProbByRPO = tProbByRPO;
 	}
-	
-	
+		
+	private String teamName;
+	private int teamSeriesCount;
+	private int teamMatchCount;
+	private double mean_Of_Average;
+	private double mean_Of_RPO;
+	private double stdDeviation_ForAverage;
+	private double stdDeviation_ForRPO;
+	private double tProbByAverage;
+	private double tProbByRPO;
 }
