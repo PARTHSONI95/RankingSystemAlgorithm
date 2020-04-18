@@ -1,4 +1,4 @@
-##Project Title : Program structures & Algorithm - Ranking System##
+**Project Title : Program structures & Algorithm - Ranking System**
 
 This project aims at developing the Ranking System algorithm using the dataset where dataset contains the data of cricket matches between teams for past 3 years. Dataset consists of different factors to be accounted for defining ranking system. The probability derived for different factors ultimately helps to compare the performance of the teams and predict the winning chances of any team when match will be played in the future.
 
@@ -43,7 +43,7 @@ IGNORE 1 LINES
 
 - Note: Make sure to change the directory path of CSV file from correct local directory.
 
-** Running the code**
+**Running the code**
 
 - Change Database User and password as required by your MySQL set up in DBOperation class.
 - Run the program as Java Application from DataService class.
